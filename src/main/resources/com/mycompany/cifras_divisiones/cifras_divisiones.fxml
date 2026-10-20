@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="653.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="com.mycompany.cifras_divisiones.Cifras_divisionesController">
+   <children>
+      <Label layoutX="44.0" layoutY="45.0" prefHeight="42.0" prefWidth="166.0" text="Ingrese un numero:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAnalizar" layoutX="386.0" layoutY="46.0" mnemonicParsing="false" onAction="#analizarNumero" prefHeight="40.0" prefWidth="96.0" text="Analizar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLimpiar" layoutX="508.0" layoutY="46.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="40.0" prefWidth="96.0" text="Limpiar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNumero" layoutX="210.0" layoutY="46.0" prefHeight="40.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="44.0" layoutY="117.0" prefHeight="42.0" prefWidth="194.0" text="Cantidad de cifras">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="160.0" prefHeight="42.0" prefWidth="194.0" text="Suma de cifras impares">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="202.0" prefHeight="42.0" prefWidth="194.0" text="Suma de cifras pares">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="244.0" prefHeight="42.0" prefWidth="194.0" text="Suma total de cifras">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="286.0" prefHeight="42.0" prefWidth="194.0" text="Cifra mayor">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="328.0" prefHeight="42.0" prefWidth="194.0" text="Cifra menor">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCantidadCifras" editable="false" layoutX="238.0" layoutY="117.0" prefHeight="40.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSumaImpares" editable="false" layoutX="238.0" layoutY="161.0" prefHeight="40.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSumaPares" editable="false" layoutX="238.0" layoutY="203.0" prefHeight="40.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSumaTotal" editable="false" layoutX="238.0" layoutY="245.0" prefHeight="40.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCifraMayor" editable="false" layoutX="238.0" layoutY="287.0" prefHeight="40.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCifraMenor" editable="false" layoutX="238.0" layoutY="329.0" prefHeight="40.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="418.0" layoutY="116.0" prefHeight="42.0" prefWidth="166.0" text="Divisores">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listDivisores" layoutX="418.0" layoutY="157.0" prefHeight="200.0" prefWidth="214.0" />
+   </children>
+</AnchorPane>
